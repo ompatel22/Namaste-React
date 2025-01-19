@@ -8,7 +8,6 @@ const parent=React.createElement("div",{id:"parent"},[
         React.createElement("h2",{},"h2")
     ])
 ])
-
 // const heading=React.createElement(
 //     "h1",
 //     {id:"heading", xyz:"abc"},
