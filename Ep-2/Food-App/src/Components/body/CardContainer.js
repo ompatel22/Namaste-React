@@ -2,11 +2,11 @@ import React from "react";
 import RestaurantCard from "./RestaurantCard";
 
 const CardContainer = (props) => {
-  const {resList} = props;
+  const {filteredList} = props;
   return (
     <div className="cardcontainer">
-      {resList.map((res) => (
-        <RestaurantCard key={res.id} resData={res} />
+      {filteredList.map((res) => (
+        <RestaurantCard key={res.info.id} resData={res.info} />
       ))}
     </div>
   );
