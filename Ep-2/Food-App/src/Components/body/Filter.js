@@ -1,7 +1,7 @@
 import React from "react";
 
 const Filter = (props) => {
-  const { filteredList, setFilteredList, resList } = props;
+  const { setFilteredList, resList } = props;
   return (
     <div className="filter">
       <button
@@ -10,7 +10,6 @@ const Filter = (props) => {
             (res) => res.info.avgRating >= 4.5
           );
           setFilteredList(updatedFilteredList);
-          console.log("hello");
         }}
       >
         Top Rated Restaurants
